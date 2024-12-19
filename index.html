@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Navbar</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css"
+</head>
+<body>
+  <!-- Navigation Bar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+      <!-- Logo -->
+      <a class="navbar-brand" href="#">
+        <img src="12.png" alt="Logo">
+      </a>
+
+      <!-- Toggler -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Navbar Content -->
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav mx-auto">
+          <li class="nav-item">
+            <a class="nav-link active" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about">About Us</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="servicesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Our Channel
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="servicesDropdown">
+              <li><a class="dropdown-item" href="https://www.youtube.com/@Techhacker232">Worship channel</a></li>
+              <li><a class="dropdown-item" href="https://wordoffaithful2.goodbarber.app/?standalone=1">Our App</a></li>
+              <li><a class="dropdown-item" href="https://yeshukegeet.netlify.app/">Website</a></li>
+            </ul>
+         
+         
+        </ul>
+        <!-- Get Started Button -->
+        <a href="https://www.biblestudytools.com/bible-verse-of-the-day/""#Bible Verse" class="btn btn-primary btn-get-started d-none d-lg-block">Bible Verse</a>
+      </div>
+    </div>
+  </nav>
+
+   <!-- Hero Section with Slider -->
+   <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel">
+    <!-- Indicators -->
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+
+    <!-- Slides -->
+    <div class="carousel-inner">
+      <!-- Slide 1 -->
+      <div class="carousel-item active" style="background-image: url('123.jpg');">
+        <div class="container">
+          <div class="carousel-caption text-center">
+            <h1>Welcome to word of faithful truth</h1>
+            <p>Discover amazing services and solutions tailored for you.<br>We help you achieve success with ease.</p>
+            <a href="#read-more" class="btn btn-primary">Read More</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Slide 2 -->
+      <div class="carousel-item" style="background-image: url('aa.webp.');">
+        <div class="container">
+          <div class="carousel-caption text-center">
+            <h1>Daily Bible Verse</h1>
+            <p>We provide cutting-edge technology to meet your needs.<br>Partner with us for growth.</p>
+            <a href="https://sonsofglory.net/""#read-more" class="btn btn-primary">Read More</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Slide 3 -->
+      <div class="carousel-item" style="background-image: url('123.jpg');">
+        <div class="container">
+          <div class="carousel-caption text-center">
+            <h1>Your Success is Our Goal</h1>
+            <p>Partner with us for unparalleled growth and success.<br>We bring your vision to life.</p>
+            <a href="#read-more" class="btn btn-primary">Read More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Controls -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+  <div class="container">
+    <div class="row align-items-center">
+      <!-- Left Side: Tabs -->
+      <div class="col-lg-6">
+        <h2 class="mb-4">About Us</h2>
+        <!-- Tabs Navigation -->
+        <ul class="nav nav-tabs mb-4" id="aboutTabs" role="tablist">
+          <li class="nav-item" role="presentation">
+            <button class="nav-link active" id="company-tab" data-bs-toggle="tab" data-bs-target="#company" type="button" role="tab" aria-controls="company" aria-selected="true">Our Company</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="mission-tab" data-bs-toggle="tab" data-bs-target="#mission" type="button" role="tab" aria-controls="mission" aria-selected="false">Our Mission</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="vision-tab" data-bs-toggle="tab" data-bs-target="#vision" type="button" role="tab" aria-controls="vision" aria-selected="false">Our Vision</button>
+          </li>
+        </ul>
+        <!-- Tabs Content -->
+        <div class="tab-content" id="aboutTabsContent">
+          <!-- Our Company -->
+          <div class="tab-pane fade show active" id="company" role="tabpanel" aria-labelledby="company-tab">
+            <h3>Aryan Pratap Singh</h3>
+            <p>We are a team of dedicated professionals committed to delivering top-notch services that exceed expectations.</p>
+            <a href="#learn-more" class="btn btn-primary">Learn More</a>
+          </div>
+          <!-- Our Mission -->
+          <div class="tab-pane fade" id="mission" role="tabpanel" aria-labelledby="mission-tab">
+            <h3>Our Purpose</h3>
+            <p>Our mission is to create innovative solutions that empower our clients and drive success in their industries.</p>
+            <a href="#learn-more" class="btn btn-primary">Learn More</a>
+          </div>
+          <!-- Our Vision -->
+          <div class="tab-pane fade" id="vision" role="tabpanel" aria-labelledby="vision-tab">
+            <h3>Our Aspirations</h3>
+            <p>We envision a world where businesses thrive through collaboration, innovation, and sustainable growth.</p>
+            <a href="#learn-more" class="btn btn-primary">Learn More</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right Side: Image -->
+      <div class="col-lg-6 text-center">
+        <img style="width: 40%;"src="aryan1.jpeg"alt="About Us Image" class="img-fluid rounded">
+      </div>
+    </div>
+  </div>
+  <div class="container contact-section">
+    <h2 class="text-center mb-5">Contact Us</h2>
+    <div class="row align-items-center">
+      <!-- Contact Form -->
+      <div class="col-lg-6">
+        <div class="card contact-card p-4">
+          <h4>Prayer Request</h4>
+          <form>
+            <div class="mb-3">
+              <label for="name" class="form-label">Full Name</label>
+              <input type="text" class="form-control" id="name" placeholder="Enter your full name">
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label">Email Address</label>
+              <input type="email" class="form-control" id="email" placeholder="Enter your email">
+            </div>
+            <div class="mb-3">
+              <label for="message" class="form-label">Message</label>
+              <textarea class="form-control" id="message" rows="5" placeholder="Write your message"></textarea>
+            </div>
+            <button type="submit" class="btn btn-custom">Send Message</button>
+          </form>
+        </div>
+      </div>
+
+      <!-- Map -->
+      <div class="col-lg-6 mt-4 mt-lg-0">
+        <iframe 
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.0552386234867!2d144.9640553153186!3d-37.817209979751264!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642af0f11fd81%3A0xf5775a74e62eb88b!2sFederation%20Square!5e0!3m2!1sen!2sau!4v1679402175892!5m2!1sen!2sau" 
+          width="100%" 
+          height="400" 
+          style="border:0;" 
+          allowfullscreen="" 
+          loading="lazy">
+        </iframe>
+      </div>
+    </div>
+  </div>
+  <div class="container comment-section">
+    <h2 class="text-center mb-5">Comments</h2>
+    <div class="row">
+      <!-- Comment Form -->
+      <div class="col-lg-6">
+        <h4>Leave a Comment</h4>
+        <form id="commentForm">
+          <div class="mb-3">
+            <label for="name" class="form-label">Your Name</label>
+            <input type="text" class="form-control" id="name" placeholder="Enter your name" required>
+          </div>
+          <div class="mb-3">
+            <label for="comment" class="form-label">Your Comment</label>
+            <textarea class="form-control" id="comment" rows="4" placeholder="Write your comment" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-custom">Submit Comment</button>
+        </form>
+      </div>
+
+      <!-- Comments Display -->
+      <div class="col-lg-6 mt-4 mt-lg-0">
+        <h4>Comments</h4>
+        <div id="commentsList">
+          <!-- Example Comment -->
+          <div class="comment-card">
+            <h6>John Doe</h6>
+            <p>This is an example comment. Great job on the website!</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="flower-border">
+  <h1>Welcome to My Website</h1>
+  <p>John 16:33<br>
+    Jesus acknowledges that the Christian life will be difficult, but promises that there is hope in the world to come.</p>
+</div>
+
+
+  
+  <footer style="background-color: #222; color: #ccc; padding: 20px 0; font-family: Arial, sans-serif; font-size: 14px; text-align: center;">
+  <div style="max-width: 1200px; margin: 0 auto; padding: 0 20px;">
+    <div style="margin-bottom: 15px;">
+      <a href="/about" style="color: #ccc; margin: 0 10px; text-decoration: none;">About Us</a> |
+      <a href="/contact" style="color: #ccc; margin: 0 10px; text-decoration: none;">Contact</a> |
+      <a href="/privacy" style="color: #ccc; margin: 0 10px; text-decoration: none;">Privacy Policy</a> |
+      <a href="/terms" style="color: #ccc; margin: 0 10px; text-decoration: none;">Terms of Use</a>
+    </div>
+    <div style="margin-bottom: 10px;">
+      <a href="https://www.facebook.com" target="_blank" style="color: #ccc; margin: 0 10px; text-decoration: none;">Facebook</a>
+      <a href="https://www.twitter.com" target="_blank" style="color: #ccc; margin: 0 10px; text-decoration: none;">Twitter</a>
+      <a href="https://www.instagram.com" target="_blank" style="color: #ccc; margin: 0 10px; text-decoration: none;">Instagram</a>
+      <a href="https://www.linkedin.com" target="_blank" style="color: #ccc; margin: 0 10px; text-decoration: none;">LinkedIn</a>
+    </div>
+    <p style="margin: 0; font-size: 12px;">&copy; 2024 YourWebsiteName. All Rights Reserved.</p>
+  </div>
+</footer>
+  
+
+  <script src="script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
